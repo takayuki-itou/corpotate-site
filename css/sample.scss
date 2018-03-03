@@ -66,7 +66,7 @@ header{
     }
   }
   
-  @media (min-width: 551px) { // 最小551pxまでは三本メニューは
+  @media (min-width: 551px) { // 551px以上は三本メニューは
     .sp_navi{                 // 表示されない
       display: none;
     }
@@ -463,3 +463,26 @@ h1{
   margin: 0;
   padding: 0;
 }
+
+
+// news
+
+#sub_cover {
+  padding: 40px 0 ;
+  background-image: url(../images/news/sub_cover.jpg);
+  background-size: cover;
+  
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx){
+  background-image: url(../images/news/sub_cover@2x.jpg);
+  }
+
+  h2 {
+  text-align: center;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 0.2rem;
+  }
+}
+
