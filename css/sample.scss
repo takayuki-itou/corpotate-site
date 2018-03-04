@@ -26,7 +26,7 @@ header{
     padding-bottom:4px;
   }
 
-  @media (max-width: 550px) { // 最大550pxまでロゴとナビはこの表示
+  @media (max-width: 549px) { // 最大549pxまでロゴとナビはこの表示
     .logo{                    // それ以上は"u-max-full-width"
       width: 190px;  // max-width は『小さいい画面の時は』て意味でOK
                       // logoは元々 幅239pxみたい
@@ -66,7 +66,7 @@ header{
     }
   }
   
-  @media (min-width: 551px) { // 551px以上は三本メニューは
+  @media (min-width: 550px) { // 550px以上は三本メニューは
     .sp_navi{                 // 表示されない
       display: none;
     }
@@ -167,14 +167,14 @@ header{
     // .pc_navi_li
     
   }
-  // min-width: 551px
+  // min-width: 550px
   
-    @media (max-width: 550px) { // 最大550pxまではPCメニューは
+    @media (max-width: 549px) { // 最大550pxまではPCメニューは
     .pc_navi{                   // 表示されない
       display: none;
     }
   }
-  // max-width: 550px
+  // max-width: 549px
 }
 
 
@@ -197,7 +197,7 @@ header{
 
   }
   
-  @media (min-width: 551px) {    // PC用スタイル
+  @media (min-width: 550px) {    // PC用スタイル
 
     text-align: left;     // 文字や画像に対して、水平方向の揃え方を指定 今回は「新時代のソリュ〜」
     height:420px;         // content areaの高さ
@@ -208,7 +208,7 @@ header{
       margin-left: 70px;  // 画面左の70px以上の隙間？はskeltonで.containerのwidthが定義されてるから！
     }
   }
-  // min-width: 551px
+  // min-width: 550px
 
 }
 
@@ -216,10 +216,10 @@ header{
 
   padding-top:20px;            // スマホの時は20px
 
-  @media (min-width: 551px) {  // PCの時は30px 
+  @media (min-width: 550px) {  // PCの時は30px 
     padding-top: 30px;
   }
-  // min-width: 551px
+  // min-width: 550px
 
 
   .columns{
@@ -238,7 +238,7 @@ header{
       margin-top: 10px;
     }
 
-    @media (min-width: 551px) {   // PCサイズ
+    @media (min-width: 550px) {   // PCサイズ
 
       .service_title{
         @include fontsize(16);
@@ -249,7 +249,7 @@ header{
       }
       
     }
-    // min-width: 551px
+    // min-width: 550px
   }
   // .columns
 }
@@ -260,7 +260,7 @@ header{
 
   background-color:$gray_blue;
 
-  @media (min-width: 551px) {
+  @media (min-width: 550px) {
 
     .container{
 
@@ -269,7 +269,7 @@ header{
     }
 
   }
-  // min-width: 551px
+  // min-width: 550px
 
   .news_title{
 
@@ -298,7 +298,7 @@ header{
   }
   // .news_lists
 
-  @media (min-width: 551px) {
+  @media (min-width: 550px) {
 
     .news_title{
       @include fontsize(22);
@@ -321,7 +321,7 @@ header{
     // .news_lists
 
   }
-  // min-width: 551px
+  // min-width: 550px
 
 
 }
@@ -334,7 +334,7 @@ footer{
   color: #fff;
   padding-top: 20px;
 
-  @media (max-width: 550px) {  // ここ以下スマホサイズ〜550pxの定義を上書き
+  @media (max-width: 549px) {  // ここ以下スマホサイズ〜550pxの定義を上書き
 
     .container{
 
@@ -372,7 +372,7 @@ footer{
     // .foot_navi
 
   }
-  // max-width: 550px
+  // max-width: 549px
 
 
 
@@ -391,7 +391,7 @@ footer{
 
 
 
-  @media (min-width: 551px) {  // 551px以上を定義
+  @media (min-width: 550px) {  // 551px以上を定義
 
     padding-top: 30px;
 
@@ -453,7 +453,7 @@ footer{
     }
 
   }
-  // min-width: 551p
+  // min-width: 550p
 
 
 }
@@ -486,7 +486,6 @@ h1{
   letter-spacing: 0.2rem;
   }
   
-// ↓PC
 @media (min-width: 550px) {
     padding: 80px 0;
   
@@ -500,32 +499,78 @@ h1{
 
 // news contents
 
-  #contents {
-    padding-top: 20px;
+#contents {
+  padding-top: 20px;
     
-    #main {
+  #main {
       
-    h2 {
-    color: #42b9d0;
-    border-bottom: 3px solid #42b9d0;
-    @include fontsize(15);
-    font-weight: bold;
-    padding-bottom: 15px;
+  h2 {
+  color: #42b9d0;
+  border-bottom: 3px solid #42b9d0;
+  @include fontsize(15);
+  font-weight: bold;
+  padding-bottom: 15px;
      }
      
-     .news_li li {
-    list-style: none;
+  .news_li li {
+  list-style: none;
 
-    span {
-    color: #42b9d0;
-    display: block;
-    font-weight: bold;
-    margin-bottom: 3px;
+  span {
+  color: #42b9d0;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 3px;
     
       }
     }
-  }    
+  }
+  
+  #sidebar {
+    padding-bottom: 20px;
+    
+  .pc_sidemenu {
+    @media (max-width: 549px) {
+    display: none;
+    }
+  
+  h3 {
+    color: #42b9d0;
+    @include fontsize(14);
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    background-color: #f3f9fb;
+    padding: 15px;
+    margin-bottom: 0px;
+     }
+     
+  li {
+    background-image: url(../images/news/side_arrow.png);
+    background-size: 4px 8px;
+    
+    @media screen and (-webkit-min-device-pixel-ratio:2),
+                          (min-resolution: 2dppx){
+                            
+    background-image: url(../images/news/side_arrow@2x.png);
+        }
+    
+    list-style: none;
+    display: block;
+    border-bottom: 1px solid #e5e5e5;
+    background-repeat: no-repeat;
+    background-position: 8px center;
+    margin-bottom: 0px;
+    padding: 10px 10px 10px 20px;
+    
+    a {
+      color: #339fd1;
+    text-decoration: none;
+        }
+        
+      }
+    }
+  }
 }
+
 
 @media (min-width: 550px) {
   #contents {
@@ -547,12 +592,16 @@ h1{
     display: inline-block;
     margin-bottom: 0;
     padding-right: 10px;
-      }
-  
+
+        }
       }  
     }
   }  
 }
+
+
+  
+
 
 
 
