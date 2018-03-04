@@ -496,8 +496,7 @@ h1{
 }
 
 
-
-// news contents
+// contents
 
 #contents {
   padding-top: 20px;
@@ -597,6 +596,25 @@ h1{
       }  
     }
   }  
+}
+
+// company
+
+#contents {
+  #main{
+    h2.company_title {
+      margin-bottom: 0px;
+    }
+    th, td {
+    padding: 20px 0;
+    color: #626262;
+    @include fontsize(14);
+    }
+    th {
+    padding-right: 20px;
+    }
+
+  }
 }
 
 
